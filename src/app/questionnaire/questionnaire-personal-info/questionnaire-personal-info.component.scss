@@ -1,0 +1,13 @@
+:host {
+    display: block;
+    width: 520px;
+}
+
+.ng-form-field {
+    width: 100%;
+    ::ng-deep {
+        .mat-form-field-empty.mat-form-field-label {
+            text-align: center;
+        }
+    }
+}

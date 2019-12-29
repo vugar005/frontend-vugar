@@ -1,0 +1,17 @@
+:host {
+    display: block;
+    width: 100%;
+}
+
+.component {
+    height: 161px;
+    width: 100%;
+    &__title {
+        color: #000000;
+        font-size: 70px;
+        font-weight: 300;
+        width: 100%;
+        text-align: center;
+        padding-top: 100px;
+    }
+}

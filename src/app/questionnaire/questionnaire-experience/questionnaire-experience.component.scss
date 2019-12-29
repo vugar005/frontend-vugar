@@ -1,0 +1,12 @@
+:host {
+    display: block;
+}
+
+.checkbox-col {
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+    &__field {
+
+    }
+}
