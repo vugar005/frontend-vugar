@@ -1,6 +1,9 @@
 :host {
     display: block;
     width: 100%;
+    top: 0;
+    z-index: 2;
+    background: #ffffff;
 }
 
 .header {
@@ -13,8 +16,5 @@
         margin-right: 35px;
         color: var(--primary-default);
         cursor: pointer;
-        &--active {
-            color: #000000;
-        }
     }
 }

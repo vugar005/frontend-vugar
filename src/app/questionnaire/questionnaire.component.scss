@@ -1,9 +1,6 @@
 :host {
     display: block;
     height: calc(100vh - 94px);
-    background-image: url('../../assets/images/questionnaire-background.png');
-    background-repeat: no-repeat;
-
 }
 
 .item {
@@ -33,6 +30,7 @@
 
     &__content {
         margin-top: 47px;
+        width: 100%;
     }
 }
 
@@ -40,6 +38,6 @@ section#submit {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 69px;
+    margin-top: 50px;
     margin-bottom: 10px;
 }

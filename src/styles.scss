@@ -26,7 +26,7 @@ body {
 
 * {
   box-sizing: border-box;
-  font-family: inherit;
+  font-family: 'Roboto', sans-serif;
 }
 
 a,
@@ -154,7 +154,7 @@ button.is-loading {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 7px;
   background-color: #F5F5F5;
 }
 
@@ -165,18 +165,33 @@ button.is-loading {
 }
 
 
-  ::-webkit-input-placeholder {
-    text-align: center;
+//   ::-webkit-input-placeholder {
+//     text-align: center!important;
+//  }
+
+//  :-moz-placeholder { /* Firefox 18- */
+//     text-align: center;
+//  }
+
+//  ::-moz-placeholder {  /* Firefox 19+ */
+//     text-align: center;
+//  }
+
+//  :-ms-input-placeholder {
+//     text-align: center;
+//  }
+
+ .mat-option-text {
+   color: #435993;
+   text-align: center;
  }
 
- :-moz-placeholder { /* Firefox 18- */
-    text-align: center;
+ .input.mat-input-element {
+   text-align: center;
  }
 
- ::-moz-placeholder {  /* Firefox 19+ */
-    text-align: center;
- }
-
- :-ms-input-placeholder {
-    text-align: center;
+ .mat-checkbox-inner-container {
+   &:hover {
+     background-color: #e9efff;
+   }
  }

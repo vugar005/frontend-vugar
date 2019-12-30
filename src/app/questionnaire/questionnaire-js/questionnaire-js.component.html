@@ -1,1 +1,28 @@
-<p>questionnaire-js works!</p>
+<div class="progress" id="progress">
+    <div class="progress__division">
+        <div class="progress__division__item ">Не владею</div>
+        <div class="progress__division__item">
+            Использую готовые решения
+        </div>
+        <div class="progress__division__item">
+            Использую готовые решенияи умею и переделывать
+        </div>
+        <div class="progress__division__item">
+            Пишу сложный JS с нуля
+        </div>
+    </div>
+    <div class="progress__active"
+     [ngClass]="{
+         'progress__active--low': progressState === 'low',
+         'progress__active--medium': progressState === 'medium',
+         'progress__active--high': progressState === 'high',
+         'progress__active--expert': progressState === 'expert'
+        }"
+    (click)="onProgressClick($event)">
+
+</div>
+    <div class="progress__pointer" [style.left]="getPointerX()">
+        <img src="./assets/icons/rounded-rectangle.svg">
+    </div>
+    <div class="progress__backdrop" (click)="onProgressClick($event)"></div>
+</div>

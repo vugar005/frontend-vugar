@@ -1,0 +1,73 @@
+.progress {
+    width: 100%;
+    height: 115px;
+    position: relative;
+    &__division {
+        display: flex;
+        align-items: center;
+        &__item {
+            color: #2e211c;
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 18.99px;
+            position: relative;
+            text-align: left;
+            width: 25%;
+            &:last-child {
+                text-align: right;
+            }
+        }
+    }
+    &__active {
+        background-image: linear-gradient(to right, #ccb1f1 0%, #435993 100%);
+        clip-path: polygon(0% 30%, 0% 50%, 100% 50%, 0% 50%);
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: clip-path 200ms ease-in;
+        &--low {
+            clip-path: polygon(25% 45%, 25% 50%, 100% 50%, 0% 50%);
+        }
+        &--medium {
+            clip-path: polygon(50% 40%, 50% 50%, 100% 50%, 0% 50%);
+        }
+        &--high {
+            clip-path: polygon(75% 35%, 75% 50%, 100% 50%, 0% 50%);
+        }
+        &--expert {
+            clip-path: polygon(100% 30%, 100% 50%, 100% 50%, 0% 50%);
+        }
+    }
+    &__backdrop {
+        background: #1c1c1c;
+        opacity: 0.1;
+        clip-path: polygon(100% 30%, 100% 50%, 100% 50%, 0% 50%);
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: 0;
+        height: 100%;
+    }
+    &__pointer {
+        width: 23px;
+        height: 26px;
+        top: 25px;
+        position: relative;
+        cursor: pointer;
+        transition: left 200ms ease-in;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .progress {
+       &__division {
+            &__item {
+                font-size: 10px;
+            }
+        }
+    }
+}
